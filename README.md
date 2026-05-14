@@ -8,6 +8,8 @@
  Dentro de cada carpeta de cada juego se encuentra un ejecutable para probarlos, archivos involucrados en el desarrollo de los juegos 
  y un README con más información sobre cada uno.
 
+<video src="clip.mp4" width="100%" controls autoplay loop muted></video>
+
 ## 🚀 Proyectos Destacados
 
 ### 1. Ascencio (Ajedrez)
