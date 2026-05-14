@@ -2,7 +2,7 @@
 
  Este proyecto es un motor de ajedrez funcional desarrollado en Unity, enfocado en la creación de un sistema de reglas robusto y escalable para juegos de estrategia por turnos. <br>
  Todos los scripts se encuentran en "Ascencio\Game source files\Assets\Scripts". <br>
- Únicamente algunas partes del código fue desarrollado por mí en este proyecto, cuyos detalles son descritos a continuación.
+ Únicamente algunas partes del código fueron desarrollados por mí en este proyecto, cuyos detalles son descritos a continuación.
 
 ## 🧩 Arquitectura del Sistema
 El núcleo del juego se basa en una arquitectura modular que separa la representación de datos de la lógica de ejecución:
