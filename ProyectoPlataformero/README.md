@@ -4,6 +4,8 @@
  Todos los scripts se encuentran en "ProyectoPlataformero\Game source files\Assets\Scripts". <br>
  Todo el código fue escrito únicamente por mí, a excepción de los métodos que involucran la manipulación de sprites.
 
+ ![Test](clip.gif)
+
 ## 🏃 Lógica de Movimiento e Inercia
 En lugar de simplemente utilizar un movimiento binario (moverse/detenerse), implementé un sistema de aceleración progresiva que recompensa el movimiento continuo.
 
