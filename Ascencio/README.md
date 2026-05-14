@@ -1,24 +1,19 @@
 # Ascension: Lógica de Ajedrez y Sistemas de Tablero
 
- Este proyecto es un motor de ajedrez funcional desarrollado en Unity, enfocado en la creación de un sistema de reglas robusto 
- y escalable para juegos de estrategia por turnos.
+ Este proyecto es un motor de ajedrez funcional desarrollado en Unity, enfocado en la creación de un sistema de reglas robusto y escalable para juegos de estrategia por turnos.
  Todos los scripts se encuentran en "Ascencio\Game source files\Assets\Scripts".
  Únicamente algunas partes del código fue desarrollado por mí en este proyecto, cuyos detalles son descritos a continuación.
 
 ## 🧩 Arquitectura del Sistema
 El núcleo del juego se basa en una arquitectura modular que separa la representación de datos de la lógica de ejecución:
 
-*   **Definición de Entidades:** Utilizo una clase base `Piece` que centraliza propiedades clave como el tipo de pieza, capacidades de vuelo y 
-*	  rangos de movimiento (horizontal, vertical y diagonal).
+*   **Definición de Entidades:** Utilizo una clase base `Piece` que centraliza propiedades clave como el tipo de pieza, capacidades de vuelo y rangos de movimiento (horizontal, vertical y diagonal).
 
 *   **Sistema de Rejilla (GridSystem):** El tablero se gestiona mediante matrices, permitiendo una búsqueda y actualización de estados de celda eficiente.
 
 *   **Controlador de Turnos:** Implementé una gestión de turnos persistente para validar qué equipo tiene la autoridad de realizar movimientos en cada ciclo de juego.
 
-*	**Integración del Sistema de Habilidades:** Como la propuesta de este prototipo se extiende más allá que el de un simple juego de Ajedrez, desarrollé un sistema general
-*	  para la integración de habilidades para cada pieza. Actualmente la única habilidad configurada es la del "Enroque", que permite realizar un movimiento especial cuando
-*	  una pieza del tipo "Rook" (Torre) interactúa con una pieza de tipo "King" (Rey). Si bien esta es una mecánica base del Ajedrez clásico, aquí fue programada como una
-*	  habilidad especial, dentro de un sistema complejo pero abierto para la integración de más habilidades personalizadas.
+*	**Integración del Sistema de Habilidades:** Como la propuesta de este prototipo se extiende más allá que el de un simple juego de Ajedrez, desarrollé un sistema general para la integración de habilidades para cada pieza. Actualmente la única habilidad configurada es la del "Enroque", que permite realizar un movimiento especial cuando una pieza del tipo "Rook" (Torre) interactúa con una pieza de tipo "King" (Rey). Si bien esta es una mecánica base del Ajedrez clásico, aquí fue programada como una habilidad especial, dentro de un sistema complejo pero abierto para la integración de más habilidades personalizadas.
 
 ## ⚙️ Implementación Técnica: La Clase ChessPiece
 Mi mayor contribución técnica en este proyecto fue el desarrollo integral de la lógica de movimiento y validación con la clase ChessPiece:
