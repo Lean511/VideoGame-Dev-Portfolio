@@ -4,6 +4,8 @@
  Todos los scripts se encuentran en "Ascencio\Game source files\Assets\Scripts". <br>
  Únicamente algunas partes del código fueron desarrollados por mí en este proyecto, cuyos detalles son descritos a continuación.
 
+![Test](clip.gif)
+
 ## 🧩 Arquitectura del Sistema
 El núcleo del juego se basa en una arquitectura modular que separa la representación de datos de la lógica de ejecución:
 
