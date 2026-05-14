@@ -4,7 +4,7 @@
  Todos los scripts se encuentran en "SpaceShooters\Game source files\Assets\Assets\Scripts". <br>
  Todo el código de este proyecto fue desarrollado únicamente por mí.
  
- ![Nave disparando y rotando con Raycast](SpaceShooters.mpa)
+ ![Test](SpaceShooters.mp4)
 
 ## 🕹️ Mecánicas de Navegación y Control
 El movimiento de la nave integra la posición del cursor del mouse directamente en la lógica de navegación:
