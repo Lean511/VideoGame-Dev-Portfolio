@@ -1,7 +1,6 @@
 # Ascension: Lógica de Ajedrez y Sistemas de Tablero
 
- Este proyecto es un motor de ajedrez funcional desarrollado en Unity, enfocado en la creación de un sistema de reglas robusto y escalable para juegos de estrategia por turnos.
-  Todos los scripts se encuentran en "Ascencio\Game source files\Assets\Scripts".
+ Este proyecto es un motor de ajedrez funcional desarrollado en Unity, enfocado en la creación de un sistema de reglas robusto y escalable para juegos de estrategia por turnos.  Todos los scripts se encuentran en "Ascencio\Game source files\Assets\Scripts".
   Únicamente algunas partes del código fue desarrollado por mí en este proyecto, cuyos detalles son descritos a continuación.
 
 ## 🧩 Arquitectura del Sistema
