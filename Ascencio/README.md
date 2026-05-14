@@ -1,7 +1,7 @@
 # Ascension: Lógica de Ajedrez y Sistemas de Tablero
 
  Este proyecto es un motor de ajedrez funcional desarrollado en Unity, enfocado en la creación de un sistema de reglas robusto y escalable para juegos de estrategia por turnos. <br>
- Todos los scripts se encuentran en "Ascencio\Game source files\Assets\Scripts".
+ Todos los scripts se encuentran en "Ascencio\Game source files\Assets\Scripts". <br>
  Únicamente algunas partes del código fue desarrollado por mí en este proyecto, cuyos detalles son descritos a continuación.
 
 ## 🧩 Arquitectura del Sistema
@@ -18,20 +18,13 @@ El núcleo del juego se basa en una arquitectura modular que separa la represent
 ## ⚙️ Implementación Técnica: La Clase ChessPiece
 Mi mayor contribución técnica en este proyecto fue el desarrollo integral de la lógica de movimiento y validación con la clase ChessPiece:
 
-*   **Asignación Dinámica de Reglas:** Utilizo estructuras de control `switch` para asignar valores de movimiento específicos basados en el `pieceType` de cada objeto.
-*	  Cada tipo de pieza cuenta con sus propios comportamientos y características, permitiendo que cada una actúe de manera ágil según su tipo, principalmente para
-*	  facilitar el desarrollo de las piezas.
+*   **Asignación Dinámica de Reglas:** Utilizo estructuras de control `switch` para asignar valores de movimiento específicos basados en el `pieceType` de cada objeto. Cada tipo de pieza cuenta con sus propios comportamientos y características, permitiendo que cada una actúe de manera ágil según su tipo, principalmente para facilitar el desarrollo de las piezas.
 
-*   **Algoritmo de Validación de Caminos:** Desarrollé un sistema que verifica la legalidad de los movimientos filtrando obstáculos en tiempo real. 
-*	  Esto incluye lógica especializada para trayectorias diagonales (`CheckDiagonalPath`) y ortogonales (`CheckPath`), además de la lógica detrás del movimiento de cada
-*	  pieza según su tipo, incluyendo la posibilidad de "comer" otras piezas.
+*   **Algoritmo de Validación de Caminos:** Desarrollé un sistema que verifica la legalidad de los movimientos filtrando obstáculos en tiempo real. Esto incluye lógica especializada para trayectorias diagonales (`CheckDiagonalPath`) y ortogonales (`CheckPath`), además de la lógica detrás del movimiento de cada pieza según su tipo, incluyendo la posibilidad de "comer" otras piezas.
 
-*   **Ejecución y Registro de Movimientos:** El método `MovePiece` no solo actualiza la posición física, también gestiona la ocupación de celdas en el `GridSystem`, 
-*	  registra el historial de movimientos y dispara la actualización de elementos visuales (highlights).
+*   **Ejecución y Registro de Movimientos:** El método `MovePiece` no solo actualiza la posición física, también gestiona la ocupación de celdas en el `GridSystem`, registra el historial de movimientos y dispara la actualización de elementos visuales (highlights).
 
 ## 🚀 Flexibilidad
-*   **Manejo de Casos Especiales:** Diseñar un sistema que diferencie entre el movimiento general y habilidades especiales (`hasSpecialMovement`) permitió 
-*	  mantener un código limpio y fácil de extender para mecánicas futuras.
+*   **Manejo de Casos Especiales:** Diseñar un sistema que diferencie entre el movimiento general y habilidades especiales (`hasSpecialMovement`) permitió mantener un código limpio y fácil de extender para mecánicas futuras.
 
-*	**Estructura abierta:** Todo el juego se desarrolló teniendo en mente agregar más piezas, más tipos de pieza y hasta más habilidades, por lo que la estructura
-*	  del mismo se construyó de manera que facilite la implementación de más contenido futuro al juego con la mayor facilidad posible.
+*	**Estructura abierta:** Todo el juego se desarrolló teniendo en mente agregar más piezas, más tipos de pieza y hasta más habilidades, por lo que la estructura del mismo se construyó de manera que facilite la implementación de más contenido futuro al juego con la mayor facilidad posible.
