@@ -9,9 +9,9 @@
 ## 🏃 Lógica de Movimiento e Inercia
 En lugar de simplemente utilizar un movimiento binario (moverse/detenerse), implementé un sistema de aceleración progresiva que recompensa el movimiento continuo.
 
-*   **Manipulación de Velocidad Linear:** Como se observa en `ListenForHorizontalMovementInputs()`, utilizo manipulación directa de `rigidBody.linearVelocity` para garantizar una respuesta inmediata del input, preservando la gravedad del motor de física.
+*   **Manipulación de Velocidad Linear:** Utilizo manipulación directa de `rigidBody.linearVelocity` para garantizar una respuesta inmediata del input, preservando la gravedad del motor de física.
 
-*   **Curva de Aceleración Personalizada:** Mediante el método `CheckForInertiaAcceleration()`, el `movementSpeed` aumenta gradualmente hasta un `maxMovementSpeed`. 
+*   **Curva de Aceleración Personalizada:** Mediante el método `CheckForInertiaAcceleration()`, el `movementSpeed` aumenta gradualmente hasta un `maxMovementSpeed`. La velocidad a la que aumenta depende de una variable de aceleración por inercia. 
 
 *   **Tiempo de Gracia (Grace Period):** Implementé un sistema basado en `Time.time` para permitir que el jugador mantenga su inercia durante un breve periodo incluso después de soltar el input, mejorando la fluidez del control.
 
