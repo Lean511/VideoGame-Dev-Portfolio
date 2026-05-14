@@ -9,9 +9,9 @@ En lugar de simplemente utilizar un movimiento binario (moverse/detenerse), impl
 
 *   **Manipulación de Velocidad Linear:** Como se observa en `ListenForHorizontalMovementInputs()`, utilizo manipulación directa de `rigidBody.linearVelocity` 
 *     para garantizar una respuesta inmediata del input, preservando la gravedad del motor de física.
-*
+
 *   **Curva de Aceleración Personalizada:** Mediante el método `CheckForInertiaAcceleration()`, el `movementSpeed` aumenta gradualmente hasta un `maxMovementSpeed`. 
-*
+
 *   **Tiempo de Gracia (Grace Period):** Implementé un sistema basado en `Time.time` para permitir que el jugador mantenga su inercia durante un breve periodo 
 *	  incluso después de soltar el input, mejorando la fluidez del control.
 
@@ -20,16 +20,16 @@ El núcleo del gameplay es la vulnerabilidad basada en estados. El jugador no po
 
 *   **Detección de Estado "Powered":** Utilizo un método booleano `isPowered()` que actúa como un "Gatekeeper", permitiendo acciones ofensivas solo cuando 
 *	  la velocidad actual iguala o supera la máxima permitida.
-*
+
 *   **Comunicación entre Objetos:** El sistema utiliza `OnTriggerEnter2D` para identificar enemigos. Si se cumplen las condiciones (`isPowered` + `isVulnerable`), 
 *	  se dispara el método `Die()` del enemigo; de lo contrario, el jugador ejecuta `ReceiveDamage()`.
-*
+
 *   **Solución de Errores (Fix de Colisiones):** Como detalle técnico, incluí un reinicio rápido del `Collider2D` tras el impacto para prevenir errores de 
 *	  detección múltiple y asegurar la invulnerabilidad temporal del jugador.
 
 ## 🛠️ Buenas Prácticas Implementadas
 *   **Encapsulamiento:** Métodos privados para lógica interna y públicos para interacción externa.
-*
+
 *   **Modularidad:** Separación clara entre la escucha de inputs, el cálculo de físicas y la resolución de colisiones.
-*
+
 *   **Código Auto-documentado:** Nombres de variables descriptivos y comentarios claros en español para facilitar el mantenimiento.
