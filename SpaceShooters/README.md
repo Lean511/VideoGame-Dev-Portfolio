@@ -4,7 +4,7 @@
  Todos los scripts se encuentran en "SpaceShooters\Game source files\Assets\Assets\Scripts". <br>
  Todo el código de este proyecto fue desarrollado únicamente por mí.
  
-<video src="SpaceShooters.mp4" width="100%" controls autoplay loop muted></video>
+<video src="clip.mp4" width="100%" controls autoplay loop muted></video>
 
 ## 🕹️ Mecánicas de Navegación y Control
 El movimiento de la nave integra la posición del cursor del mouse directamente en la lógica de navegación:
