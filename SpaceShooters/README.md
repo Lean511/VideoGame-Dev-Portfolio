@@ -3,6 +3,8 @@
  Este proyecto es un shooter de perspectiva cenital centrado en el control preciso del jugador y sistemas de generación de enemigos dinámicos. <br>
  Todos los scripts se encuentran en "SpaceShooters\Game source files\Assets\Assets\Scripts". <br>
  Todo el código de este proyecto fue desarrollado únicamente por mí.
+ 
+ ![Nave disparando y rotando con Raycast](SpaceShooters.mpa)
 
 ## 🕹️ Mecánicas de Navegación y Control
 El movimiento de la nave integra la posición del cursor del mouse directamente en la lógica de navegación:
